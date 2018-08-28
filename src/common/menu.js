@@ -128,9 +128,8 @@ const menuData = [
         path: '500',
       },
       {
-        name: '触发异常',
-        path: 'trigger',
-        hideInMenu: true,
+        name: 'setting',
+        path: 'setting',
       },
     ],
   },
@@ -151,6 +150,17 @@ const menuData = [
       {
         name: '注册结果',
         path: 'register-result',
+      },
+    ],
+  },
+  {
+    name: '地址设置',
+    icon: 'environment',
+    path: 'address',
+    children: [
+      {
+        name: '会场',
+        path: 'setting',
       },
     ],
   },

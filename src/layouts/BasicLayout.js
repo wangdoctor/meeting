@@ -102,6 +102,7 @@ export default class BasicLayout extends React.PureComponent {
 
   state = {
     isMobile,
+    year: new Date(),
   };
 
   getChildContext() {
@@ -290,7 +291,7 @@ export default class BasicLayout extends React.PureComponent {
               ]}
               copyright={
                 <Fragment>
-                  Copyright <Icon type="copyright" /> 2018 蚂蚁金服体验技术部出品
+                  Copyright <Icon type="copyright" /> {this.state.year.getFullYear()} 红石会议系统
                 </Fragment>
               }
             />
